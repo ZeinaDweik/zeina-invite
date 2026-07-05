@@ -370,14 +370,14 @@ html, body {
    ══════════════════════════════════════════ */
 .el-arch         { top: -21.02%; left: 1.37%;  width: 97.94%; }
 .el-see-you      { top: 15.00%;  left: 13.80%; width: 72.00%; display: flex; justify-content: center; }
-.el-s2-details   { top: 33.00%;  left: 14.00%; width: 72.00%; display: flex; justify-content: center; }
-.el-map-box      { top: 50.00%;  left: 21.00%; width: 58.00%; display: flex; justify-content: center; }
+.el-s2-details   { top: 32.00%;  left: 14.00%; width: 72.00%; display: flex; justify-content: center; }
+.el-map-box      { top: 48.00%;  left: 21.00%; width: 58.00%; display: flex; justify-content: center; }
 .el-cta-row      { top: 78.50%;  left: 11.01%; width: 80.00%; display: flex; justify-content: center; }
 
 /* Styles */
 .see-you-text {
   font-family: 'Great Vibes', cursive;
-  font-size: 9.91cqw;
+  font-size: 11.00cqw;
   font-weight: 400;
   letter-spacing: 0.000em;
   line-height: 1.10;
@@ -389,7 +389,7 @@ html, body {
 .s2-details { display: flex; flex-direction: column; gap: 3px; text-align: center; width: 100%; align-items: center; }
 .s2-details p {
   font-family: 'Inter', sans-serif;
-  font-size: 2.85cqw;
+  font-size: 3.40cqw;
   font-weight: 600;
   letter-spacing: 0.150em;
   line-height: 1.50;
@@ -402,7 +402,7 @@ html, body {
   display: inline-block;
 }
 .s2-venue, .s2-subvenue {
-  font-size: 4.0cqw;
+  font-size: 4.80cqw;
 }
 .s2-distance sup { font-size: 0.7em; vertical-align: super; }
 
