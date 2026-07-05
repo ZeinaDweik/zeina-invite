@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Allura&family=Permanent+Marker&family=Nunito:wght@600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Allura&family=Permanent+Marker&family=Nunito:wght@600&family=Inter:wght@300;400;500;600;700&family=Architects+Daughter&family=Patrick+Hand&display=swap');
 
 /* ============================================================
    INDEX.CSS — Zeina's Graduation Party
@@ -20,12 +20,12 @@ html, body {
 /* ──────────── TOKENS ──────────── */
 :root {
   --pink:        #d61a7c;
-  --btn-pink:    #d43d84;
+  --btn-pink:    #e05596;
   --pink-border: #e8a8c8;
   --text-muted:  #999;
   --font-script: 'Great Vibes', cursive;
   --font-allura: 'Allura', cursive;
-  --font-felt:   'Felt Tip Roman', 'Permanent Marker', cursive;
+  --font-felt:   'Felt Tip Roman', 'Architects Daughter', 'Patrick Hand', 'Permanent Marker', cursive;
   /* Shared ombre gradient */
   --grad: linear-gradient(180deg, #e6b6c7 0%, #e596ab 33%, #d46684 67%, #aa295a 100%);
 }
@@ -613,4 +613,3 @@ html, body {
     height: 100svh;
   }
 }
-
