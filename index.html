@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zeina's Graduation Party — You're Invited!</title>
+  <meta name="description" content="Join us to celebrate Zeina's graduation! A summer outdoor party filled with love, laughter, and a little sparkle." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Great Vibes, Allura, Permanent Marker, Nunito (soft rounded), Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Allura&family=Permanent+Marker&family=Nunito:wght@600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+
+  <!-- ===== THE STAGE ===== -->
+  <main class="invite-stage" id="inviteStage" aria-label="Graduation Party Invitation">
+
+    <!-- Audio Element -->
+    <audio id="bgMusic" src="elements/final/invite_song.mp3" loop preload="auto"></audio>
+
+    <!-- Sound Toggle Button -->
+    <button id="soundToggle" class="sound-toggle" aria-label="Toggle Sound">
+      <svg class="sound-icon-svg" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+      </svg>
+    </button>
+
+    <!-- ===== TAP TO START OVERLAY ===== -->
+    <div id="startOverlay" class="start-overlay">
+      <div class="start-string"></div>
+      <h1 class="start-title grad-text">You're Invited!</h1>
+      <div class="start-disco">
+        <img src="elements/final/pink_disco.png" alt="" aria-hidden="true" />
+      </div>
+      <button id="startBtn" class="start-btn" aria-label="Open invitation">Open</button>
+    </div>
+
+    <!-- ============= SCENE ONE ============= -->
+    <section class="scene scene-one" aria-hidden="false">
+
+      <!-- Background texture fills the stage via CSS -->
+
+      <!-- BOW — top-left corner, bleeds off left edge -->
+      <div class="el el-bow">
+        <img src="elements/final/bow.png" alt="" aria-hidden="true" />
+      </div>
+
+
+      <!-- PINK DISCO BALL — top-center, crops at top -->
+      <div class="el el-pink-disco">
+        <img src="elements/final/pink_disco.png" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- SILVER DISCO WITH CHAIN — top-right hanging -->
+      <div class="el el-silver-disco">
+        <img src="elements/final/disco_with_chain.png" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- GRAD CAP — above title, center-left -->
+      <div class="el el-grad-cap">
+        <img src="elements/final/grad_cap.png" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- TITLE — script, single size, slight left tilt -->
+      <div class="el el-title">
+        <h1 class="title-script">Zeina's<br/>Graduation<br/>Party</h1>
+      </div>
+
+      <!-- THREE SILVER STARS — right of title -->
+      <div class="el el-three-stars">
+        <img src="elements/final/three_stars.png" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- 3D SILVER STAR — right side, lower -->
+      <div class="el el-star-3d">
+        <img src="elements/final/3d_star.png" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- BLACK KISS — bottom-left -->
+      <div class="el el-black-kiss">
+        <img src="elements/final/black_kiss.png" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- GLITTER STARS — bottom-left cluster, near black kiss -->
+      <div class="el el-glitter-star-1">
+        <img src="elements/final/glitter_star.png" alt="" aria-hidden="true" />
+      </div>
+      <div class="el el-glitter-star-2">
+        <img src="elements/final/glitter_star.png" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- PINK KISS — bottom-right, bleeds off edge -->
+      <div class="el el-pink-kiss">
+        <img src="elements/final/pink_kiss.png" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- BOTTOM TEXT BLOCK -->
+      <!-- Each sentence gets grad-text so gradient applies individually per line -->
+      <div class="el el-bottom-text">
+
+        <p class="invited-line grad-text">YOU'RE INVITED TO CELEBRATE</p>
+
+        <div class="date-row" role="group" aria-label="Date and time">
+          <div class="date-side">
+            <div class="date-line"></div>
+            <span class="date-label grad-text">AUGUST</span>
+          </div>
+          <div class="date-center">
+            <span class="date-big allura grad-text">1</span><sup class="date-sup grad-text">ST</sup>
+          </div>
+          <div class="date-side">
+            <span class="date-label grad-text">7:00 PM</span>
+            <div class="date-line"></div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ============= SCENE TWO (slides up at ~14.5s) ============= -->
+    <section class="scene scene-two" aria-hidden="true">
+
+      <!-- Arch background -->
+      <div class="el el-arch">
+        <img src="elements/final/arch.png" alt="" aria-hidden="true" />
+      </div>
+
+      <!-- "See You There!" -->
+      <div class="el el-see-you">
+        <h2 class="title-script see-you-text">See You<br/>There!</h2>
+      </div>
+
+      <!-- Details Block -->
+      <div class="el el-s2-details">
+        <div class="s2-details">
+          <p class="s2-venue">THE ROYAL OCCASION</p>
+          <p class="s2-subvenue font-felt">UM AL-AMAD</p>
+          <p class="s2-distance">25 MINS FROM 8<sup>TH</sup> CIRCLE</p>
+        </div>
+      </div>
+
+      <!-- RSVP Section -->
+      <div class="el el-map-box">
+        <div class="rsvp-box">
+          <div id="rsvpFormContent" style="display: flex; flex-direction: column; gap: 8px; width: 100%;">
+            <div class="rsvp-toggle">
+              <button id="btnRsvpYes" class="rsvp-toggle-btn selected" data-status="yes">ATTENDING</button>
+              <button id="btnRsvpNo" class="rsvp-toggle-btn" data-status="no">SORRY, CAN'T MAKE IT</button>
+            </div>
+            <input type="text" id="rsvpName" class="rsvp-input" placeholder="Your Name" autocomplete="off" />
+            <button id="btnSubmitRSVP" class="rsvp-submit-btn">Send RSVP</button>
+          </div>
+          <div id="rsvpSuccessContent" class="rsvp-success-content" style="display: none;">
+            <p id="rsvpSuccessText" class="rsvp-success-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="el el-cta-row">
+        <div class="cta-row">
+          <a id="btnMap" href="https://maps.app.goo.gl/x1FJ8ADwiLrHcFAWA" target="_blank" rel="noopener" class="cta-pill">
+            <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Open Map
+          </a>
+          <button id="btnCalendar" class="cta-pill">
+            <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/></svg>Add to Calendar
+          </button>
+          <button id="btnReplay" class="cta-pill cta-secondary">
+            <svg class="cta-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>Replay
+          </button>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
