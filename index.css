@@ -599,17 +599,10 @@ html, body {
    ══════════════════════════════════════════ */
 @media (max-width: 500px) {
   html, body {
-    background-image: url('elements/final/background_texture.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #e0c4d0;
   }
   .invite-stage {
-    outline: none;
-    outline-offset: 0;
-    box-shadow: none;
-    border: none;
-    width: 100vw;
-    height: 100svh;
+    width: 90vw;
+    max-height: 92svh;
   }
 }
