@@ -369,15 +369,15 @@ html, body {
    SCENE TWO — ARCH + FINAL DETAILS
    ══════════════════════════════════════════ */
 .el-arch         { top: -21.02%; left: 1.37%;  width: 97.94%; }
-.el-see-you      { top: 18.47%;  left: 13.80%; width: 72.00%; display: flex; justify-content: center; }
-.el-s2-details   { top: 37.90%;  left: 14.00%; width: 72.00%; display: flex; justify-content: center; }
-.el-map-box      { top: 52.50%;  left: 21.00%; width: 58.00%; display: flex; justify-content: center; }
+.el-see-you      { top: 15.00%;  left: 13.80%; width: 72.00%; display: flex; justify-content: center; }
+.el-s2-details   { top: 33.00%;  left: 14.00%; width: 72.00%; display: flex; justify-content: center; }
+.el-map-box      { top: 50.00%;  left: 21.00%; width: 58.00%; display: flex; justify-content: center; }
 .el-cta-row      { top: 78.50%;  left: 11.01%; width: 80.00%; display: flex; justify-content: center; }
 
 /* Styles */
 .see-you-text {
   font-family: 'Great Vibes', cursive;
-  font-size: 8.49cqw;
+  font-size: 9.91cqw;
   font-weight: 400;
   letter-spacing: 0.000em;
   line-height: 1.10;
@@ -395,7 +395,10 @@ html, body {
   line-height: 1.50;
   text-align: center;
   text-transform: uppercase;
-  color: #d61a7c;
+  background: linear-gradient(292deg, #dfa9bc 0%, #dd7e97 33%, #d46684 67%, #aa295a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   display: inline-block;
 }
 .s2-venue, .s2-subvenue {
