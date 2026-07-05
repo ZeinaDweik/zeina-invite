@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Allura&family=Permanent+Marker&family=Nunito:wght@600&family=Inter:wght@300;400;500;600;700&display=swap');
+
 /* ============================================================
    INDEX.CSS — Zeina's Graduation Party
    Positions: from drag editor.
@@ -23,8 +25,7 @@ html, body {
   --text-muted:  #999;
   --font-script: 'Great Vibes', cursive;
   --font-allura: 'Allura', cursive;
-  --font-felt:   local('Linotype Felt Tip Roman'), local('LinotypeFeltTip'),
-                 local('Felt Tip Roman'), 'Permanent Marker', cursive;
+  --font-felt:   'Felt Tip Roman', 'Permanent Marker', cursive;
   /* Shared ombre gradient */
   --grad: linear-gradient(180deg, #e6b6c7 0%, #e596ab 33%, #d46684 67%, #aa295a 100%);
 }
@@ -40,6 +41,9 @@ html, body {
   background-clip: text;
   /* Required so inline elements stretch background over their own height */
   display: inline-block;
+}
+.font-felt {
+  font-family: var(--font-felt);
 }
 
 /* ══════════════════════════════════════════
@@ -609,3 +613,4 @@ html, body {
     height: 100svh;
   }
 }
+
