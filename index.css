@@ -20,7 +20,7 @@ html, body {
 /* ──────────── TOKENS ──────────── */
 :root {
   --pink:        #d61a7c;
-  --btn-pink:    #e05596;
+  --btn-pink:    #d43d84;
   --pink-border: #e8a8c8;
   --text-muted:  #999;
   --font-script: 'Great Vibes', cursive;
@@ -211,7 +211,7 @@ html, body {
   container-type: inline-size;
   position: relative;
   width: min(100vw, 430px);
-  aspect-ratio: 808 / 1138;
+  height: calc(min(100vw, 430px) * (1138 / 808));
   max-height: 100svh;
   overflow: hidden;
   outline: 3px solid var(--pink-border);
@@ -603,6 +603,7 @@ html, body {
   }
   .invite-stage {
     width: 90vw;
+    height: calc(90vw * (1138 / 808));
     max-height: 92svh;
   }
 }
